@@ -1,0 +1,152 @@
+@import 'base';
+
+section.landing-page {
+  width: 100%;
+  height: 100vh;
+
+  background: var(--white);
+
+  position: relative;
+
+  div.overlay {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+    transform: skewY(-12deg);
+    transform-origin: 0;
+  }
+
+  header {
+    width: 85%;
+    height: 100px;
+
+    margin: 0 auto;
+    padding: 10px;
+
+    position: relative;
+  
+    display: flex;
+    align-items: center;
+    gap: 150px;
+
+    nav {
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        list-style-type: none;
+        
+        li {
+          a {
+            text-decoration: none;
+
+            font-size: 17px;
+            font-weight: bold;
+            color: #fff;
+            
+            padding-bottom: 2px;
+
+
+            &::after {
+              content: '';
+              display: block;
+              width: 0;
+              height: 2px;
+
+              background: #fff;
+              transition: width .3s;
+            }
+
+            &:hover::after {
+              width: 100%;
+              transition: .3s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  div.main-landing {
+    width: 85%;
+    height: calc(100vh - 100px);
+
+    margin: 0 auto;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 530px;
+    }
+
+    div.box-content {
+      color: #fff;
+
+      h1 {
+        font-size: 35px;
+        padding-bottom: 20px;
+      }
+
+      div.buttons {
+        display: flex;
+        gap: 20px;
+
+        margin-top: 30px;
+
+        button {
+          width: 180px;
+          height: 50px;
+
+          border: 1px solid gray;
+          border-radius: 5px;
+          
+          font-size: 16px;
+          font-weight: bold; 
+          
+          transition: .3s;
+          cursor: pointer;
+
+          &:hover {
+            transform: translateY(-3px);
+          }
+        }
+
+        button.init {
+          background: var(--green);
+          color: #fff;
+
+          &:hover {
+            background: none;
+            border: 1px solid #fff;
+          }
+        }
+
+        button.contact {
+          color: var(--green);
+          background: var(--white);
+
+          &:hover {
+            opacity: .8;
+            border: 1px solid #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.about {
+  width: 100%;
+  height: 500px;
+
+  background: var(--orange);
+}
