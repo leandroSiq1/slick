@@ -10,6 +10,9 @@ html, body {
 }
 
 :root {
+  --title: #151948;
+  --text: #5e629c;
+
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -32,4 +35,8 @@ html, body {
   --light: #f8f9fa;
   --dark: #343a40;
   --background-footer: #180e29;
+}
+
+button {
+  cursor: pointer;
 }

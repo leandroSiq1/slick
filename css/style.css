@@ -11,6 +11,8 @@ html, body {
 }
 
 :root {
+  --title: #151948;
+  --text: #5e629c;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -33,6 +35,10 @@ html, body {
   --light: #f8f9fa;
   --dark: #343a40;
   --background-footer: #180e29;
+}
+
+button {
+  cursor: pointer;
 }
 
 section.landing-page {
@@ -181,7 +187,133 @@ section.landing-page div.main-landing div.box-content div.buttons button.contact
 
 section.about {
   width: 100%;
-  height: 500px;
-  background: var(--orange);
+  padding-bottom: 100px;
+}
+
+section.about div.container-about {
+  width: 85%;
+  height: 100%;
+  background: #fff;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+section.about div.container-about div.box {
+  width: 350px;
+  height: 440px;
+  padding: 20px;
+  border: 1px solid lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+section.about div.container-about div.box div.img-box {
+  width: 100px;
+  height: 100px;
+  background: #e3fff2;
+  border-radius: 50px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.about div.container-about div.box div.img-box img {
+  width: 35px;
+}
+
+section.about div.container-about div.box h1 {
+  color: var(--title);
+}
+
+section.about div.container-about div.box p {
+  text-align: center;
+  color: var(--text);
+}
+
+section.about div.container-about div.box:hover {
+  border-color: var(--green);
+  -webkit-box-shadow: 0 0 20px lightgray;
+          box-shadow: 0 0 20px lightgray;
+}
+
+section.about-two {
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+section.about-two div.container-about-two {
+  width: 85%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 50px;
+}
+
+section.about-two div.container-about-two img {
+  width: 550px;
+}
+
+section.about-two div.container-about-two div.about-content h1 {
+  font-size: 35px;
+  color: var(--title);
+  padding-bottom: 20px;
+}
+
+section.about-two div.container-about-two div.about-content p {
+  color: var(--text);
+  padding-bottom: 30px;
+}
+
+section.about-two div.container-about-two div.about-content button {
+  width: 160px;
+  height: 50px;
+  background: var(--green);
+  -webkit-box-shadow: 0 0 10px gray;
+          box-shadow: 0 0 10px gray;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+section.about-two div.container-about-two div.about-content button:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 /*# sourceMappingURL=style.css.map */
