@@ -13,6 +13,8 @@ html, body {
 :root {
   --title: #151948;
   --text: #5e629c;
+  --background-services: #f9f9f9;
+  --background-footer: #180e29;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -21,6 +23,7 @@ html, body {
   --orange: #fd7e14;
   --yellow: #ffc107;
   --green: #3ecf8e;
+  --green-light: #e3fff2;
   --teal: #20c997;
   --cyan: #17a2b8;
   --white: #fff;
@@ -34,7 +37,6 @@ html, body {
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
-  --background-footer: #180e29;
 }
 
 button {
@@ -315,5 +317,91 @@ section.about-two div.container-about-two div.about-content button {
 section.about-two div.container-about-two div.about-content button:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
+}
+
+section.services {
+  width: 100%;
+  background: var(--background-services);
+  border: 1px solid gray;
+  padding-bottom: 100px;
+}
+
+section.services div.title {
+  text-align: center;
+  padding-top: 130px;
+}
+
+section.services div.title h1 {
+  font-size: 35px;
+  color: var(--title);
+}
+
+section.services div.title p {
+  font-size: 17px;
+  color: var(--text);
+  padding-bottom: 60px;
+}
+
+section.services div.info-container {
+  width: 85%;
+  height: 900px;
+  margin: 0 auto;
+  background: lightgray;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  gap: 1px;
+}
+
+section.services div.info-container div.box {
+  background: #fff;
+  padding: 20px;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+section.services div.info-container div.box:hover {
+  -webkit-box-shadow: 0 0 20px lightgray;
+          box-shadow: 0 0 20px lightgray;
+  z-index: 999;
+}
+
+section.services div.info-container div.box:hover div.img {
+  border-color: var(--green);
+}
+
+section.services div.info-container div.box div.img {
+  width: 100px;
+  height: 100px;
+  background: var(--green-light);
+  border-radius: 100%;
+  border: 1px solid var(--green-light);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+section.services div.info-container div.box div.img img {
+  width: 40px;
+}
+
+section.services div.info-container div.box div.content h1 {
+  color: var(--title);
+  padding: 10px 0 5px 0;
+}
+
+section.services div.info-container div.box div.content p {
+  color: var(--text);
 }
 /*# sourceMappingURL=style.css.map */

@@ -266,3 +266,89 @@ section.about-two {
     }
   }
 }
+
+section.services {
+  width: 100%;
+
+  background: var(--background-services);
+  border: 1px solid gray;
+
+  padding-bottom: 100px;
+
+  div.title {
+    text-align: center;
+    padding-top: 130px;
+
+    h1 {
+      font-size: 35px;
+      color: var(--title);
+    }
+
+    p {
+      font-size:  17px;
+      color: var(--text);
+
+      padding-bottom: 60px;
+    }
+  }
+
+  div.info-container {
+    width: 85%;
+    height: 900px;
+    
+    margin: 0 auto;
+  
+    background: lightgray;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1px;
+
+    div.box {
+      background: #fff;
+      padding: 20px;
+      transition: .8s;
+
+      &:hover {
+        box-shadow: 0 0 20px lightgray;
+        z-index: 999;
+
+        div.img {
+          border-color: var(--green);
+        }
+      }
+
+      div.img {
+        width: 100px;
+        height: 100px;
+
+        background: var(--green-light);
+        border-radius: 100%;
+        border: 1px solid var(--green-light);
+
+        display:  flex;
+        align-items: center;
+        justify-content:center;
+
+        transition: .3s;
+
+        img {
+          width: 40px;
+        }
+      }
+
+      div.content {
+
+        h1 {
+          color: var(--title);
+          padding: 10px 0 5px 0;
+        }
+        
+        p {
+          color: var(--text);
+        }
+      }
+    }
+  }
+}
