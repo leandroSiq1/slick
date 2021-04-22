@@ -15,6 +15,7 @@ html, body {
   --text: #5e629c;
   --background-services: #f9f9f9;
   --background-footer: #180e29;
+  --background-linear: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -56,7 +57,7 @@ section.landing-page div.overlay {
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+  background: var(--background-linear);
   -webkit-transform: skewY(-12deg);
           transform: skewY(-12deg);
   -webkit-transform-origin: 0;
@@ -322,7 +323,6 @@ section.about-two div.container-about-two div.about-content button:hover {
 section.services {
   width: 100%;
   background: var(--background-services);
-  border: 1px solid gray;
   padding-bottom: 100px;
 }
 
@@ -403,5 +403,92 @@ section.services div.info-container div.box div.content h1 {
 
 section.services div.info-container div.box div.content p {
   color: var(--text);
+}
+
+section.works-recents {
+  width: 100%;
+}
+
+section.works-recents div.content-title {
+  width: 100%;
+  height: 350px;
+  background: var(--background-linear);
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+}
+
+section.works-recents div.content-title h1 {
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+
+section.works-recents div.content-title p {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+section.works-recents div.carrosel-works {
+  width: 85%;
+  height: 220px;
+  margin: 0 auto;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+section.works-recents div.carrosel-works div.work {
+  width: calc(100% / 5);
+  height: 100%;
+  background: var(--text);
+}
+
+section.pricing-plan {
+  width: 100%;
+  height: 400px;
+}
+
+section.pricing-plan div.title-plan {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--text);
+}
+
+section.pricing-plan div.title-plan h1 {
+  color: var(--title);
+  font-size: 35px;
+}
+
+section.pricing-plan div.container-pricing {
+  max-width: 1110px;
+  background: var(--orange);
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+section.pricing-plan div.container-pricing div.box {
+  width: calc(100% / 3);
+  height: 490px;
+  background: #fff;
+  border: 1px solid gray;
 }
 /*# sourceMappingURL=style.css.map */
