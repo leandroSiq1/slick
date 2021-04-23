@@ -455,7 +455,6 @@ section.works-recents div.carrosel-works div.work {
 
 section.pricing-plan {
   width: 100%;
-  height: 400px;
 }
 
 section.pricing-plan div.title-plan {
@@ -566,5 +565,165 @@ section.pricing-plan div.container-pricing div.box button:hover {
 section.pricing-plan div.container-pricing div.box button.default {
   background: var(--green);
   color: #fff;
+}
+
+section.team {
+  width: 100%;
+}
+
+section.team div.title-team {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding: 20px 0 80px 0;
+  text-align: center;
+  color: var(--text);
+}
+
+section.team div.title-team h1 {
+  font-size: 35px;
+  color: var(--title);
+}
+
+section.team div.container-profiles {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  padding-bottom: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section.team div.container-profiles div.box-profile {
+  width: 255px;
+  height: 410px;
+  border: 1px solid lightgray;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+section.team div.container-profiles div.box-profile div.img-profile {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+section.team div.container-profiles div.box-profile div.img-profile img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.team div.container-profiles div.box-profile div.img-profile div.social-profile {
+  width: 140px;
+  height: 40px;
+  background: none;
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+section.team div.container-profiles div.box-profile div.img-profile div.social-profile nav {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.team div.container-profiles div.box-profile div.img-profile div.social-profile nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+section.team div.container-profiles div.box-profile div.img-profile div.social-profile nav ul li {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid lightgray;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+section.team div.container-profiles div.box-profile div.img-profile div.social-profile nav ul li:hover {
+  background: var(--green);
+  border-color: var(--green);
+}
+
+section.team div.container-profiles div.box-profile div.img-profile div.social-profile nav ul li:hover a i {
+  color: #fff;
+}
+
+section.team div.container-profiles div.box-profile div.img-profile div.social-profile nav ul li a {
+  text-decoration: none;
+}
+
+section.team div.container-profiles div.box-profile div.img-profile div.social-profile nav ul li a i {
+  color: var(--green);
+}
+
+section.team div.container-profiles div.box-profile div.name-profile {
+  width: 100%;
+  height: calc(100% - 300px);
+  background: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.team div.container-profiles div.box-profile div.name-profile h3 {
+  color: var(--title);
+}
+
+section.team div.container-profiles div.box-profile div.name-profile small {
+  margin-top: -6px;
+  color: var(--text);
+}
+
+section.team div.container-profiles div.box-profile:hover {
+  -webkit-box-shadow: 0 0 10px var(--gray-dark);
+          box-shadow: 0 0 10px var(--gray-dark);
 }
 /*# sourceMappingURL=style.css.map */
