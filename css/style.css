@@ -16,6 +16,7 @@ html, body {
   --background-gray-light: #f9f9f9;
   --background-footer: #180e29;
   --background-linear: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+  --border-footer: #3c1f6e;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -833,5 +834,108 @@ section.blog div.container-blog div.post div.content-post div.footer-post span {
 section.blog div.container-blog div.post div.content-post div.footer-post span i {
   font-size: 14px;
   color: var(--green);
+}
+
+section.contact {
+  width: 100%;
+  background: #fff;
+  padding-bottom: 10px;
+}
+
+section.contact div.title-contact {
+  padding-top: 90px;
+  text-align: center;
+}
+
+section.contact div.title-contact h1 {
+  font-size: 35px;
+  color: var(--title);
+}
+
+section.contact div.title-contact p {
+  color: var(--text);
+}
+
+section.contact div.container-contact {
+  width: 85%;
+  height: 500px;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section.contact div.container-contact div.form {
+  width: 600px;
+  height: 100%;
+}
+
+section.contact div.container-contact div.form form div.group-input {
+  max-width: 500px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+section.contact div.container-contact div.form form div.group-input input {
+  width: 100%;
+  height: 50px;
+  padding-left: 13px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 17px;
+  color: var(--text);
+}
+
+section.contact div.container-contact div.form form div.group-input textarea {
+  width: 100%;
+  height: 130px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 17px;
+  color: var(--text);
+  resize: none;
+}
+
+section.contact div.container-contact div.form form div.group-input button {
+  width: 160px;
+  height: 50px;
+  background: var(--green);
+  -webkit-box-shadow: 0 0px 10px var(--gray);
+          box-shadow: 0 0px 10px var(--gray);
+  border: 1px solid #00c864;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+section.contact div.container-contact div.form form div.group-input button:hover {
+  margin-top: -4px;
+}
+
+section.contact div.container-contact img {
+  width: 370px;
+}
+
+footer {
+  width: 100%;
+  height: 600px;
+  background: var(--background-footer);
 }
 /*# sourceMappingURL=style.css.map */
