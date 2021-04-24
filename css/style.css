@@ -723,7 +723,115 @@ section.team div.container-profiles div.box-profile div.name-profile small {
 }
 
 section.team div.container-profiles div.box-profile:hover {
-  -webkit-box-shadow: 0 0 10px var(--gray-dark);
-          box-shadow: 0 0 10px var(--gray-dark);
+  -webkit-box-shadow: 0 0 5px var(--gray);
+          box-shadow: 0 0 5px var(--gray);
+}
+
+section.blog {
+  width: 100%;
+  background: var(--background-gray-light);
+  padding-bottom: 50px;
+}
+
+section.blog div.title {
+  padding: 110px 0 50px 0;
+  text-align: center;
+}
+
+section.blog div.title h1 {
+  font-size: 38px;
+  color: var(--title);
+}
+
+section.blog div.title p {
+  color: var(--text);
+}
+
+section.blog div.container-blog {
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1;
+      grid-template-rows: 1;
+  gap: 35px;
+}
+
+section.blog div.container-blog div.post {
+  border: 1px solid lightgray;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+section.blog div.container-blog div.post:hover {
+  border-color: var(--green);
+  -webkit-box-shadow: 0 0 5px var(--green);
+          box-shadow: 0 0 5px var(--green);
+  margin-top: -8px;
+}
+
+section.blog div.container-blog div.post div.box-img {
+  width: 100%;
+  height: 230px;
+}
+
+section.blog div.container-blog div.post div.box-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.blog div.container-blog div.post div.content-post {
+  width: 100%;
+}
+
+section.blog div.container-blog div.post div.content-post div.content {
+  width: 100%;
+  padding: 20px;
+}
+
+section.blog div.container-blog div.post div.content-post div.content h1 {
+  font-size: 23px;
+  color: var(--title);
+  padding-bottom: 10px;
+}
+
+section.blog div.container-blog div.post div.content-post div.content p {
+  color: var(--text);
+  padding-bottom: 10px;
+}
+
+section.blog div.container-blog div.post div.content-post div.content strong {
+  color: var(--green);
+}
+
+section.blog div.container-blog div.post div.content-post div.footer-post {
+  width: 100%;
+  height: 70px;
+  border-top: 1px solid lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+section.blog div.container-blog div.post div.content-post div.footer-post span {
+  font-size: 14px;
+  color: var(--text);
+}
+
+section.blog div.container-blog div.post div.content-post div.footer-post span i {
+  font-size: 14px;
+  color: var(--green);
 }
 /*# sourceMappingURL=style.css.map */
