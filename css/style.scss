@@ -853,7 +853,140 @@ section.contact {
 
 footer {
   width: 100%;
-  height: 600px;
 
   background: var(--background-footer);
+
+  div.container-footer {
+    max-width: 85%;
+    height: 440px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    img {
+      padding: 0 100px 0 0;
+    }
+
+    div.content-footer {
+      width: 100%;
+
+      nav {
+        max-width: max-content;
+
+        display: flex;
+        align-items: center;
+  
+        ul {
+          width: 160px;
+          list-style: none;
+          
+          margin: 0 50px 0 0;
+
+          h1 {
+            color: #fff;
+            padding-bottom: 40px;
+          }
+  
+          li {
+            transition: .2s;
+            margin-bottom: 8px;
+  
+            a {
+              color: #fff;
+              text-decoration: none;
+            }
+  
+            &:hover {
+              padding-left: 5px;
+              a {
+                color: var(--green);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    div.box-input {
+      padding: 20px;
+
+      h3 {
+        color: #fff;
+        padding-bottom: 20px;
+      }
+
+      p {
+        color: #fff;
+        line-height: 30px;
+        padding-bottom: 15px;
+      }
+
+      div.input-footer {
+        width: 200px;
+
+        display: flex;
+        align-items: center;
+        
+        input {
+          width: 150px;
+          height: 40px;
+
+          background: var(--indigo);
+          border: 1px solid var(--purple);
+          border-right: none;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+
+          font-size: 16px;
+          color: #fff;
+
+          padding-left: 10px;
+        }
+
+        button {
+          width: 45px;
+          height: 40px;
+
+          background: var(--green);
+          border-left: none;
+          border: 1px solid var(--purple);
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+
+
+          font-size: 25px;
+          font-weight: bold;
+          color: #fff;
+
+          transition: .2s;
+
+          &:hover {
+            opacity: .7;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  div.bottom-info {
+    width: 100%;
+    height: 90px;
+
+    border-top: 1px solid var(--indigo);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      color: #fff;
+      
+      span {
+        color: var(--green);
+      }
+    }
+  }
 }

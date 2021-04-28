@@ -935,7 +935,149 @@ section.contact div.container-contact img {
 
 footer {
   width: 100%;
-  height: 600px;
   background: var(--background-footer);
+}
+
+footer div.container-footer {
+  max-width: 85%;
+  height: 440px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div.container-footer img {
+  padding: 0 100px 0 0;
+}
+
+footer div.container-footer div.content-footer {
+  width: 100%;
+}
+
+footer div.container-footer div.content-footer nav {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div.container-footer div.content-footer nav ul {
+  width: 160px;
+  list-style: none;
+  margin: 0 50px 0 0;
+}
+
+footer div.container-footer div.content-footer nav ul h1 {
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+footer div.container-footer div.content-footer nav ul li {
+  -webkit-transition: .2s;
+  transition: .2s;
+  margin-bottom: 8px;
+}
+
+footer div.container-footer div.content-footer nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer div.container-footer div.content-footer nav ul li:hover {
+  padding-left: 5px;
+}
+
+footer div.container-footer div.content-footer nav ul li:hover a {
+  color: var(--green);
+}
+
+footer div.container-footer div.box-input {
+  padding: 20px;
+}
+
+footer div.container-footer div.box-input h3 {
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+footer div.container-footer div.box-input p {
+  color: #fff;
+  line-height: 30px;
+  padding-bottom: 15px;
+}
+
+footer div.container-footer div.box-input div.input-footer {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div.container-footer div.box-input div.input-footer input {
+  width: 150px;
+  height: 40px;
+  background: var(--indigo);
+  border: 1px solid var(--purple);
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 16px;
+  color: #fff;
+  padding-left: 10px;
+}
+
+footer div.container-footer div.box-input div.input-footer button {
+  width: 45px;
+  height: 40px;
+  background: var(--green);
+  border-left: none;
+  border: 1px solid var(--purple);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+footer div.container-footer div.box-input div.input-footer button:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+footer div.bottom-info {
+  width: 100%;
+  height: 90px;
+  border-top: 1px solid var(--indigo);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer div.bottom-info p {
+  color: #fff;
+}
+
+footer div.bottom-info p span {
+  color: var(--green);
 }
 /*# sourceMappingURL=style.css.map */
